@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+.headerContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C40D10;
+    padding: 0 40px;
+    box-shadow: black 0 0 10px 0;
+}
+.logoFitlab{
+   height: 80px;
+   cursor: pointer;
+   transition: ease-in-out 0.3s;
+}
+.logoFitlab:hover{
+     transform: scale(1.1);
+}
+.textoBienvenida{
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;   
+}
+.botonIngresar{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content:center;
+    padding: 5px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+    color: white;
+    transition: ease 0.2s;
+}
+.botonIngresar:hover{
+    background-color:#ffffff;
+    color: #f03a3d;
+}
+
+.iconoAnimado {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: aparecer 0.7s ease-out forwards;
+  animation-delay: 1.7s; 
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
