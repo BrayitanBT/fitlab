@@ -1,23 +1,15 @@
-import ProductCard from "../components/card/card";
-import Footer from "../components/footer/footer";
-import Carousel from "../containers/carousel/carouselContainer";
-import HeaderContainer from "../containers/header/headerContainer";
-import '../assets/css/home.css'
+import '../pages/home.css'
+import HeaderContainer from "../components/header/headerContainer"
+import Carousel from "../components/carousel/carouselContainer"
+import CardContainer from '../components/card/cardContainer'
+import Footer from '../components/footer/footer'
 const Home = ()=>{
     return(
         <div>
-            <header>
                 <HeaderContainer/>
-            </header>
-            <section className="carouselContainer">
                 <Carousel/>
-            </section>
-            <section>
-                <ProductCard/>
-            </section>
-            <footer>
-                <Footer/>
-            </footer>
+                <CardContainer/>            
+                <Footer/>          
         </div>
     )
 }

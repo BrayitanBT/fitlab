@@ -1,4 +1,4 @@
-import Carousel from "../../containers/carousel/carouselContainer"
+import Carousel from "../carousel/carouselContainer"
 const CarouselPresentational = () =>{
     return(
         <div>

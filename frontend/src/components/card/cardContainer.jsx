@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from './components/ProductCard';
+import ProductCard from './card';
 
 
 function CardContainer() {
@@ -11,13 +11,17 @@ function CardContainer() {
     const obtenerDatos = async () => {
       try {
         const res = await fetch('http://localhost:5000/obtener');
-        if (!res.ok) throw new Error('Error al obtener productos');
+        // if (!res.ok) throw new Error('Error al obtener productos');
+
         const data = await res.json();
-        setProductos(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
+        
+        console.log(data)
+
+        setProductos(data)
+        
+      } 
+      catch (error) {
+        console.error('Error: ' + error)
       }
     };
 
@@ -25,11 +29,6 @@ function CardContainer() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Catálogo Fitlab</h1>
-      {loading && <p>Cargando productos...</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-
       <div className="card-container">
         {productos.map((producto) => (
           <ProductCard
@@ -43,7 +42,6 @@ function CardContainer() {
           />
         ))}
       </div>
-    </div>
   );
 }
 

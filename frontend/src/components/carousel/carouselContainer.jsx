@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'motion/react';
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi';
-import '../../assets/css/carousel.css'
+import '../carousel/carousel.css'
 const DEFAULT_ITEMS = [
   {
     title: '',

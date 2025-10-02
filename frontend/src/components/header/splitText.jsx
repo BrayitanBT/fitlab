@@ -1,11 +1,11 @@
 import { Cat } from 'lucide-react';
-import SplitText from "../../containers/header/splitTextContainer";
-import '../../assets/css/header.css';
-function WelcomeText (){
-    const textUser = 'Brayan y Daniel'
+import SplitTextContainer from "./splitTextContainer";
+import '../header/header.css';
+function SplitText (){
+    const textUser = 'Visitante'
     return(
-        <p className='textoBienvenida'>
-            <SplitText
+        <div className='textoBienvenida'>
+            <SplitTextContainer
                     text={`Bienvenidos ${textUser}`}
                     className="textoBienvenida"
                     delay={100}
@@ -19,7 +19,7 @@ function WelcomeText (){
                     textAlign="center"
                 />
             <Cat className='iconoAnimado'/>
-        </p>
+        </div >
     )
 }
-export default WelcomeText;
+export default SplitText;

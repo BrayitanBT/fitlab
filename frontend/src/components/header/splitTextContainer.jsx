@@ -5,7 +5,7 @@ import { SplitText as GSAPSplitText } from 'gsap/SplitText';
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(ScrollTrigger, GSAPSplitText, useGSAP);
 
-const SplitText = ({
+const SplitTextContainer = ({
   text,
   className = '',
   delay = 100,
@@ -195,4 +195,4 @@ const SplitText = ({
   return renderTag();
 };
 
-export default SplitText;
+export default SplitTextContainer;
