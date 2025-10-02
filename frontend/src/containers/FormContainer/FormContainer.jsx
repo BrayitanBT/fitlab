@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Registrar from "../../components/Sign-Up_Form/registro";
+import '../../assets/css/formSignup.css'
 export default function FormContainer({}){
     const [Name,setName]=useState('')
     const [Telephone,setTelephone]=useState('')

@@ -3,13 +3,14 @@
   background-color: #000000;
   color: #eee;
   padding: 40px 20px 20px;
-  width: 100vw;
+  width: 100%;
+  height: auto;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 .footer-brand{

@@ -29,7 +29,11 @@ db.on('error', (e) => {
 // Esquema de la colección
 const ImagenesSchema = new mongoose.Schema({
     Nombre: String,
-    endpoint: String
+    endpoint: String,
+    precio: String,
+    descripcion: String,
+    tallas: String,
+    disponible: Boolean
 });
 
 // Modelo

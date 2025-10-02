@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 .headerContainer{
-    width: 100vw;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

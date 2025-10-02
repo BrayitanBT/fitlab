@@ -4,10 +4,13 @@
     box-sizing: border-box;
     list-style: none;
 }
+.home{
+    height: 100%;
+    width: 100%;
+}
 .carouselContainer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }

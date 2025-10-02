@@ -1,8 +1,8 @@
 import '../../assets/css/card.css'
-function ProductCard({ productoImage, title, sizes, available, description, price }){
+function ProductCard({ productImage, title, sizes, available, description, price }){
   return (
     <div className="card">
-        <img src={productoImage} alt="Tenis Pumba" className="product-img" /> 
+        <img src={productImage} alt="Tenis Pumba" className="product-img" /> 
 
         <div className="product-info">
           <h2 className="product-title">Titulo: {title}</h2>

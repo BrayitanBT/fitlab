@@ -1,11 +1,13 @@
 .carousel-container {
+  display: flex;
   position: relative;
   overflow: hidden;
   border: 1px solid #555;
-  border-radius: 24px;
   padding: 16px;
   --outer-r: 24px;
   --p-distance: 12px;
+  height: 800px;
+  background: rgb(41, 41, 41);
 }
 
 .carousel-track {
@@ -13,15 +15,16 @@
 }
 
 .carousel-item {
-  position: relative;
-  display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  border: 1px solid #555;
+  border: 1px solid #000000;
   border-radius: calc(var(--outer-r) - var(--p-distance));
-  background-color: #0d0716;
+  background-image: url('../img/carrusel1.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
   overflow: hidden;
   cursor: grab;
 }
@@ -35,7 +38,7 @@
 }
 
 .carousel-item.round {
-  background-color: #0d0716;
+  background-color: #acaaaf;
   position: relative;
   bottom: 0.1em;
   border: 1px solid #555;
@@ -78,13 +81,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #de1212;
 }
 
 .carousel-icon {
   height: 16px;
   width: 16px;
-  color: #060010;
+  color: #f4f4f5;
 }
 
 .carousel-item-content {

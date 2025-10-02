@@ -2,36 +2,34 @@ import { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'motion/react';
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi';
 import '../../assets/css/carousel.css'
-import carrusel1 from '../../assets/img/carrusel1.png'
 const DEFAULT_ITEMS = [
   {
-    title: 'Text Animations',
-    description: 'Cool text animations for your projects.',
+    title: '',
+    description: '',
     id: 1,
     icon: <FiFileText className="carousel-icon" />,
-    img:{carrusel1}
   },
   {
-    title: 'Animations',
-    description: 'Smooth animations for your projects.',
+    title: '',
+    description: '',
     id: 2,
-    icon: <FiCircle className="carousel-icon" />
+    icon: <FiCircle className="carousel-icon" />,
   },
   {
-    title: 'Components',
-    description: 'Reusable components for your projects.',
+    title: '',
+    description: '',
     id: 3,
     icon: <FiLayers className="carousel-icon" />
   },
   {
-    title: 'Backgrounds',
-    description: 'Beautiful backgrounds and patterns for your projects.',
+    title: '',
+    description: '',
     id: 4,
     icon: <FiLayout className="carousel-icon" />
   },
   {
-    title: 'Common UI',
-    description: 'Common UI components are coming soon!',
+    title: '',
+    description: '',
     id: 5,
     icon: <FiCode className="carousel-icon" />
   }
@@ -44,8 +42,8 @@ const SPRING_OPTIONS = { type: 'spring', stiffness: 300, damping: 30 };
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
-  baseWidth = 330,
-  autoplay = true,
+  baseWidth = 1690,
+  autoplay = false,
   autoplayDelay = 3000,
   pauseOnHover = false,
   loop = true,
