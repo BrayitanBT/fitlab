@@ -2,36 +2,22 @@ import { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'motion/react';
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi';
 import '../carousel/carousel.css'
+import carrusel1 from '../../assets/img/carrusel1.png'
 const DEFAULT_ITEMS = [
   {
-    title: '',
-    description: '',
-    id: 1,
-    icon: <FiFileText className="carousel-icon" />,
+    image:carrusel1
   },
   {
-    title: '',
-    description: '',
-    id: 2,
-    icon: <FiCircle className="carousel-icon" />,
+    image:carrusel1
   },
   {
-    title: '',
-    description: '',
-    id: 3,
-    icon: <FiLayers className="carousel-icon" />
+    image:carrusel1
   },
   {
-    title: '',
-    description: '',
-    id: 4,
-    icon: <FiLayout className="carousel-icon" />
+    image:carrusel1
   },
   {
-    title: '',
-    description: '',
-    id: 5,
-    icon: <FiCode className="carousel-icon" />
+   image:carrusel1
   }
 ];
 
@@ -42,7 +28,7 @@ const SPRING_OPTIONS = { type: 'spring', stiffness: 300, damping: 30 };
 
 export default function Carousel({
   items = DEFAULT_ITEMS,
-  baseWidth = 1690,
+  baseWidth = 1521,
   autoplay = false,
   autoplayDelay = 3000,
   pauseOnHover = false,
@@ -171,12 +157,8 @@ export default function Carousel({
               }}
               transition={effectiveTransition}
             >
-              <div className={`carousel-item-header ${round ? 'round' : ''}`}>
-                <span className="carousel-icon-container">{item.icon}</span>
-              </div>
               <div className="carousel-item-content">
-                <div className="carousel-item-title">{item.title}</div>
-                <p className="carousel-item-description">{item.description}</p>
+                <img src={item.image} alt="" />
               </div>
             </motion.div>
           );

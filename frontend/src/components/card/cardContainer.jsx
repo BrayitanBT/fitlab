@@ -4,14 +4,11 @@ import ProductCard from './card';
 
 function CardContainer() {
   const [productos, setProductos] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
         const res = await fetch('http://localhost:5000/obtener');
-        // if (!res.ok) throw new Error('Error al obtener productos');
+        if (!res.ok) throw new Error('Error al obtener productos');
 
         const data = await res.json();
         

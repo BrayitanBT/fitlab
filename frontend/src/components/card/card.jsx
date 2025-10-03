@@ -2,7 +2,7 @@ import '../card/card.css'
 function ProductCard({ productImage, title, sizes, available, description, price }){
   return (
     <div className="card">
-        <img src={productImage} alt="Tenis Pumba" className="product-img" /> 
+        <img src={productImage} alt="Producto-fitlab" className="product-img" /> 
 
         <div className="product-info">
           <h2 className="product-title">{title}</h2>

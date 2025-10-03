@@ -1,0 +1,76 @@
+/* Features.css */
+.features-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon-wrapper {
+  background-color: #dbeafe;
+  color: #b91313;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon-wrapper {
+  background-color: #b91313;
+  color: white;
+  transform: rotate(360deg);
+  box-shadow: 0 8px 20px rgba(163, 71, 79, 0.3);
+}
+
+.feature-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.feature-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

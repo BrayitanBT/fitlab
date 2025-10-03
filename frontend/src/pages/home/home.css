@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.home{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.products-header{
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 1rem 1rem;
+}
+.products-title{
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+.products-subtitle{
+  color: #6b7280;
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
