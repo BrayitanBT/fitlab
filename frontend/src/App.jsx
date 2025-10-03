@@ -3,7 +3,6 @@ import SignUpContainer from './pages/signUp/signUpContainer.jsx'
 import LoginContainer from './pages/login/loginContainer.jsx';
 import ProfileContainer from './pages/profile/profileContainer.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './app.css'
 
 function App() {
   return (

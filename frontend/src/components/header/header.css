@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #C40D10;
+    background: linear-gradient(90deg, #C40D10 0%, rgb(107, 12, 136) 100%);
     padding: 0 40px;
     box-shadow: black 0 0 10px 0;
 }

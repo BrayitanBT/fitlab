@@ -1,12 +1,10 @@
-/* Hero.css */
-.hero-page{
-    
+.hero-page{ 
   /* Imagen de fondo de ropa deportiva */
   background-image: url('../../assets/img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position:top;
-  background-attachment: fixed;
+  background-attachment:fixed;
 }
 .hero {
   position: relative;

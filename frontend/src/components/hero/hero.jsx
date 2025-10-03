@@ -18,13 +18,13 @@ const Hero = () => {
               <p className="hero-subtitle">
                 Descubre la colección de ropa deportiva que se adapta a tu estilo de vida activo
               </p>
-              <div className="hero-buttons">
+              {/* <div className="hero-buttons">
                 <button className="btn btn-primary">
                   Comprar Ahora
                   <span className="btn-arrow">→</span>
                 </button>
                 <button className="btn btn-secondary">Ver Colección</button>
-              </div>
+              </div> */}
               
               {/* Stats */}
               <div className="hero-stats">

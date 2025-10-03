@@ -54,7 +54,7 @@ const Collections = () => {
         <div className="collections-header">
           <h2 className="collections-title">Colecciones Destacadas</h2>
           <p className="collections-subtitle">
-            Explora nuestras colecciones especiales y encuentra el estilo perfecto para ti
+            Descubre nuestras colecciones especiales y encuentra el estilo perfecto para ti
           </p>
         </div>
         <div className="collections-grid">
@@ -75,9 +75,7 @@ const Collections = () => {
                   <span className="discount-text">{collection.discount}</span>
                 </div>
                 
-                <button className="collection-btn">
-                  Ver Colección
-                </button>
+                
               </div>
             </div>
           ))}
